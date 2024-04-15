@@ -6,7 +6,7 @@ $unzipFolder="$runDirectory\$nameFile"
 $exeFile="$unzipFolder\$nameFile.exe"
 $txtFile="$nameFile.txt"
 
-$params="/sfile $txtFile"
+$params="/stext $txtFile"
 
 
 Set-Location -path $runDirectory
